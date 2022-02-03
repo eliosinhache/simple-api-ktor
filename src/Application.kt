@@ -20,15 +20,15 @@ fun Application.module(testing: Boolean = false) {
 
     user()
 
-    /*routing {
-        get("/") {
+    routing {
+        get("/hello") {
             call.respondText("HELLO WORLD!", contentType = ContentType.Text.Plain)
         }
 
         get("/json/gson") {
             call.respond(mapOf("hello" to "world"))
         }
-    } */
+    }
 }
 
 data class User(val id: Long, val name: String, val surName: String) {
